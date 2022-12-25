@@ -1,13 +1,18 @@
+from os import path
 from setuptools import find_packages, setup
 
 def install_package():
   """Installs the landscapelaser library
   """
-  LONG_DESCRIPTION = "Sharpness value of loss-landscapes"
+  
+  DESCRIPTION = "A library to calculate sharpness value of loss-landscapes"
+  # Get the long description from the README file
+  with open(path.join(path.abspath(path.dirname(__file__)), 'README.md'), encoding='utf-8') as f:
+    LONG_DESCRIPTION = f.read()
   setup(
       name='landscapelaser',
-      version='0.1.0',
-      description=LONG_DESCRIPTION,
+      version='0.1.1',
+      description=DESCRIPTION,
       long_description=LONG_DESCRIPTION,
       long_description_content_type='text/markdown',
       author='Saksham Bassi',
