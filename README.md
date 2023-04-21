@@ -9,7 +9,7 @@ Calculates sharpness of the loss landscape of a model.
 ## Use
 To use the package, do:
 
-```
+```python
 from landscapelaser import LandscapeLaser
 ll = LandscapeLaser()
 
